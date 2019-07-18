@@ -81,7 +81,7 @@
     var total_reunioes
     var total_membros; //array = ['Gabriel', 'Antonio', 'Lucas'];
     var total_setima;
-    var media_setima = total_setima / total_membros;
+    var media_setima;
     var material;
 
 
@@ -107,6 +107,7 @@
 
     total_setima = parseInt(prompt('Digite o total da sétima tradição.'));
 
+    media_setima = total_setima / total_membros; 
 
     // Mostra ao usuário
     document.write("<p>Relatório do mês de:</p> " + mes);
