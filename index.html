@@ -44,7 +44,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" style="border:1px solid #ecf0f1; border-radius:2px; padding:1rem;">
 
         <script>
             //Condicional
@@ -67,7 +67,7 @@
             document.write("Total de membros = " + totalMembrosMes + "<hr>");
             /*var totalMembrosMes = parseFloat((totalMembrosMes));*/
             var totalSetimaMes = parseFloat(prompt("Digite o valor total da sétima mensal."));
-            document.write("Total da sétima R$" + totalSetimaMesto.toFixed(2) + "<hr>");
+            document.write("Total da sétima R$" + totalSetimaMes + "<hr>");
 
 
             //var totalVisitantesMes;
@@ -79,7 +79,7 @@
 
 
             var mediaSetima = totalSetimaMes / totalReunioesMes;
-            document.write("<br>A média de sétima é R$" + mediaSetima.toFixed(2) + "<hr>");
+            document.write("<br>A média de sétima por reunião é R$" + mediaSetima.toFixed(2) + "<hr>");
             console.log(mediaSetima);
 
 
