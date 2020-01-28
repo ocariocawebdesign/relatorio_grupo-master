@@ -67,7 +67,7 @@
             document.write("Total de membros = " + totalMembrosMes + "<hr>");
             /*var totalMembrosMes = parseFloat((totalMembrosMes));*/
             var totalSetimaMes = parseFloat(prompt("Digite o valor total da sétima mensal."));
-            document.write("Total da sétima é = R$" + totalSetimaMes + "<hr>");
+            document.write("Total da sétima R$" + totalSetimaMesto.toFixed(2) + "<hr>");
 
 
             //var totalVisitantesMes;
@@ -79,12 +79,12 @@
 
 
             var mediaSetima = totalSetimaMes / totalReunioesMes;
-            document.write("<br>A média de sétima é = R$" + mediaSetima.toFixed(2) + "<hr>");
+            document.write("<br>A média de sétima é R$" + mediaSetima.toFixed(2) + "<hr>");
             console.log(mediaSetima);
 
 
             var mediaSetimaMembro = (totalSetimaMes / totalMembrosMes);
-            document.write("Total de média por membros é = R$" +mediaSetimaMembro + "<hr>");
+            document.write("Total de média por membros é R$" + mediaSetimaMembro.toFixed(2) + "<hr>");
 
             console.log(mediaSetimaMembro);
             /*var saldoAnterior = parseFloat(("Digite o saldo anterior."));
