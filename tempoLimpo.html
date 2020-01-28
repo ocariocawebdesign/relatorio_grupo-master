@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt_BR" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dados de reuniões</title>
+
+    <!--Bootstrap 4.3-->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+
+
+
+    <style>
+        body {
+
+            background: #293186;
+
+        }
+
+        .container {
+
+            background: #fff !important;
+            padding: 2%;
+            ;
+
+        }
+
+        p {
+            font-weight: bold;
+            color: red;
+            margin-left: 2%;
+        }
+
+        h3 {
+
+            color: #fff;
+
+
+        }
+
+        #logo img {
+            margin-left: 2%;
+
+        }
+    </style>
+
+    <div id="logo" class="">
+        <img class="img-fluid" src="imagens/logo.png" alt="" width="180" height="180">
+
+    </div>
+
+    <div class="">
+        <h3 class="text-center">Relatório mensal de reuniões</h3>
+    </div>
+
+
+
+    <div class="container">
+
+        <!--Calculadora tempo limpo. Data inicial primeiro dia limpo - dia atual-->
+
+        <script>
+
+
+            // Obtém a data/hora atual
+            var data = new Date();
+
+            // Guarda cada pedaço em uma variável
+            var dia = data.getDate();           // 1-31
+            var dia_sem = data.getDay();            // 0-6 (zero=domingo)
+            var mes = data.getMonth();          // 0-11 (zero=janeiro)
+            var ano2 = data.getYear();           // 2 dígitos
+            var ano4 = data.getFullYear();       // 4 dígitos
+            var hora = data.getHours();          // 0-23
+            var min = data.getMinutes();        // 0-59
+            var seg = data.getSeconds();        // 0-59
+            var mseg = data.getMilliseconds();   // 0-999
+            var tz = data.getTimezoneOffset(); // em minutos
+
+            // Formata a data e a hora (note o mês + 1)
+            var str_data = dia + '/' + (mes + 1) + '/' + ano4;
+            //var str_hora = hora + ':' + min + ':' + seg;
+
+            // Mostra o resultado
+            //alert('Hoje é ' + str_data + ' às ' + str_hora);
+
+
+
+            function tempoLimpo() {
+
+                document.write("Dia que ficou limpo ");
+                dia = parseInt(prompt("Digite o dia que ficou limpo"));
+                mes = parseInt(prompt("Digite o mês que ficou limpo"));
+                ano = parseInt(prompt("Digite o ano que ficou limpo"));
+
+                var diaLimpo = dia + '/' + (mes + 1) + '/' + ano;
+                document.write(diaLimpo + "<br>");
+                var diaLimpo = parseInt(dia + '/' + (mes + 1) + '/' + ano);
+                var str_data = parseInt(dia + '/' + (mes + 1) + '/' + ano4);
+                result = str_data - diaLimpo;
+
+                document.write("Você está limpo desde " + result);
+
+            }
+
+
+            tempoLimpo();
+
+
+
+
+
+        </script>
+
+    </div>
+
+        
+
+
+
+</body>
+
+</html>

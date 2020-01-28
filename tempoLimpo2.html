@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        //https://metring.com.br/diferenca-entre-datas-em-javascript
+
+        function resultTempoLimpo() {
+
+            dataQueFicouLimpo = (prompt("Digite a data que ficou limpo"));
+            const dataAtual = new Date(); // Data de hoje
+            var dataQueFicouLimpo = new Date(); // Data que ficou Limpo
+            const resultTempoLimpo = Math.abs(dataAtual.getTime() - dataQueFicouLimpo.getTime()); // Subtrai uma data pela outra
+            const dias = Math.ceil(resultTempoLimpo / (1000 * 60 * 60 * 24)); // Divide o total pelo total de milisegundos correspondentes a 1 dia. (1000 milisegundos = 1 segundo).
+
+
+            //tempoLimpoResult = document.write('Entre ' + dataQueFicouLimpo + ' até agora já se passaram ' + dias + ' dias');
+            // Mostra a diferença em dias
+            console.log('Entre ' + dataQueFicouLimpo + ' até agora já se passaram ' + dias + ' dias');
+            tempoLimpoResult = Math.abs(dataAtual.getTime() - dataQueFicouLimpo.getTime());
+            document.write(tempoLimpoResult);
+
+        }
+
+
+        //resultTempoLimpo();
+
+        //Código original
+        const now = new Date(); // Data de hoje
+        var past = prompt("Digite a data" +) new Date(); // Outra data no passado
+
+        //var past = new Date('2014-07-07'); // Outra data no passado
+        const diff = Math.abs(now.getTime() - past.getTime()); // Subtrai uma data pela outra
+        const days = Math.ceil(diff / (1000 * 60 * 60 * 24)); // Divide o total pelo total de milisegundos correspondentes a 1 dia. (1000 milisegundos = 1 segundo).
+
+        // Mostra a diferença em dias
+        console.log('Entre 07/07/2014 até agora já se passaram ' + days + ' dias');
+
+        document.write('Entre 07/07/2014 até agora já se passaram ' + days + ' dias');
+
+
+    </script>
+
+</body>
+
+</html>

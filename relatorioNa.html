@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+    <style>
+    
+        .header-container{
+
+            
+            display: grid!important;
+            grid-template-columns: 33,3% 33,3% 33,3%!important;
+            grid-template-rows:10% 10% 10%!important;          
+            padding: 1rem;
+                     
+         }
+
+         .box01{
+
+            width: 100%;
+            border:1px solid #000;
+
+         }
+
+         .box02{
+
+            width: 100%;
+            border:1px solid #000;
+
+        }
+
+        .box03{
+
+            width: 100%;
+            border:1px solid #000;
+
+        }
+    
+    </style>
+
+
+<div class="header-container">
+
+    <div class="box01"
+
+   
+    <img src="img/logo.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" width:"120" heigth:"120" alt="">
+
+      
+
+
+     </div>
+
+    <div class="box02">
+
+       oi
+
+
+    </div>
+
+    <div class="box03">
+
+   oi
+
+    </div>
+
+</div>
+
+    <div class="container">
+
+        
+
+
+    <!--
+        Dados:
+        Total de reunioes mensal
+        Total de membros no mes
+        Media de membros por reuniao
+        Total de visitantes no mes
+        Total de ingressos no mes
+        Media de ingressos por reuniao
+        Total de troca de fichas
+        Total de 7 tradicao no mes
+        Media de 7 tradicao por reuniao
+        Media de 7 tradicao por membro
+        Saldo anterior do grupo
+        Venda de Literatura
+        Total de receitas
+        Total de repasse ao csa Nova leste
+        Aluguel do grupo
+        Manutencao da sala
+        Dispesa com servidores
+        Compra de literatura no CSA Nova Leste
+        Total de despesas
+        saldo atual do grupo
+    -->
+
+    <script>
+
+        //Condicional
+        /* var nome = prompt("Ola Digite seu nome")
+ 
+         if (nome == "Carlos") {
+ 
+             document.write("Seu nome é realmente Carlos")
+         } else {
+ 
+             document.write("Seu nome nao é Carlos")
+ 
+ 
+         }*/
+
+        var totalReunioesMes = parseInt(prompt("Digite o total de reunioes no mes."));
+        document.write(totalReunioesMes + "<hr>");
+
+        var totalMembrosMes = parseInt(prompt("Digite o total de membros no mes."));
+        document.write(totalMembrosMes + "<hr>");
+        /*var totalMembrosMes = parseFloat((totalMembrosMes));*/
+        var totalSetimaMes = parseFloat(prompt("Digite o valor total da sétima mensal."));
+        document.write(totalSetimaMes + "<hr>");
+
+
+        //var totalVisitantesMes;
+        //var totalIngressosMes = parseInt(prompt("Digite o total de ingressos."));
+        //var totalIngressosMes = parseInt(prompt(totalIngressosMes));
+
+
+        //var totalTrocaFichasMes;
+
+
+        var mediaSetima =  totalSetimaMes / totalReunioesMes ;
+        document.write("<br>A média de sétima é: R$" + mediaSetima.toFixed(2) + "<hr>");
+        console.log(mediaSetima);
+
+
+        var mediaSetimaMembro = (totalSetimaMes / totalMembrosMes);
+        document.write(mediaSetimaMembro);
+
+        console.log(mediaSetimaMembro); 
+        /*var saldoAnterior = parseFloat(("Digite o saldo anterior."));
+        document.write(saldoAnterior);
+
+        /*var saldoAtua;
+        //var vendaliteratura
+        var totalReceitas;
+        var totalRepasse;
+        var aluguelGrupo;
+        var manutencaoSala;
+        var dispesaServidores;
+        var compraLiteratura;
+        var despesas;
+        
+        var quantidade;
+
+        //objetos
+        /*var tipoLiteraura = {
+
+            nome: 'Texto Básico',
+            edicao: 'Sexta Edicao',
+            quantidade: 52,
+            valor: 12.50,
+            emEstoque: true
+        };
+        //console.log();*/
+
+        /*function calculaEstoque(QttextoBasico) {
+
+            if (QttextoBasico > 1) {
+                emEstoque = true;
+                document.write("Texto básico em estoque")
+            } else {
+                emEstoque = false;
+                document.write("Texto básico em falta ");
+            }
+
+        }*/
+
+        /*var mediaMembrosReuniao = ((totalReunioesMes + totalMembrosMes) / 2);
+        var mediaMembrosReuniao = parseInt(mediaMembrosReuniao);
+
+        document.write("O total de membros é: " + mediaMembrosReuniao + ".<br>")
+
+        var mediaIngressosMes = ((totalReunioesMes + totalIngressosMes) / 2);
+        var mediaIngressosMes = parseInt(mediaIngressosMes);
+
+        document.write("A média de ingressos: " + mediaIngressosMes + ".");
+
+
+        console.log(mediaMembrosReuniao, mediaIngressosMes);
+
+
+        //var QttextoBasico = prompt("Digite a quantidade");
+        //var QttextoBasico = parseInt(QttextoBasico);
+
+        //calculaEstoque(QttextoBasico);
+        //console.log(calculaEstoque);
+
+
+*/
+
+
+
+
+    </script>
+
+</div>
+
+
+</body>
+
+</html>
