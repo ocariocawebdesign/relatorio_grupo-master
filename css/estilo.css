@@ -41,28 +41,11 @@
         display: block;
         grid-template-columns: 100%;
     }
-    box2 {
-        /*border: 1px solid #000;*/
-        
-       
-    }
-  
 }
 
-
 @media (min-width: 320px) and (max-width: 568px) {
-
-
     .header-social {
         display: block;
         grid-template-columns: 100%;
     }
-    box2 {
-        /*border: 1px solid #000;*/
-        
-       
-    }
-
-
-
 }
