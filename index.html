@@ -9,9 +9,33 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Relatório Mensaal</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="O Carioca Web" content=" Web design, html, css, desenvolvimento de sites">
+    <meta name="description" content="Página de contato O Carioca Web Design." />
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ocariocawebdesign.github.io/ocariocaweb/">
+    <meta property="og:title" content="O Carioca Web Design">
+    <meta property="og:site_name" content="O Carioca Web Design">
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="132" />
+    <meta property="og:image" content="https://ocariocawebdesign.github.io/ocariocaweb/images/nova-logo-caricatura.png">
+
+    <!--twitter card-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ocariocacawebdesign" />
+    <meta name="twitter:creator" content="@ocariocawebdesign" />
+    <meta property="og:url" content="https://ocariocawebdesign.github.io/ocariocaweb/" />
+    <meta property="og:title" content="A Twitter O Carioca Web Design" />
+    <meta property="og:description" content="Página de contato O Carioca Web design, html, css, desenvolvimento de sites." />
+    <meta property="og:image" content="https://ocariocawebdesign.github.io/ocariocaweb/images/nova-logo-caricatura.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -37,38 +61,40 @@
 
         <div class="box3">
 
-
-
         </div>
 
     </div>
 
-
-    <div class="container" style="border:1px solid #ecf0f1; border-radius:2px; padding:1rem;">
+    <div class="container" style="border:1px solid #dfe4ea; padding:1rem; ">
 
         <script>
-            //Condicional
-            /* var nome = prompt("Ola Digite seu nome")
-
-                 if (nome == "Carlos") {
-
-                     document.write("Seu nome é realmente Carlos")
-                 } else {
-
-                     document.write("Seu nome nao é Carlos")
-
-
-                 }*/
-
             var totalReunioesMes = parseInt(prompt("Digite o total de reunioes no mês."));
             document.write("Total de reuniões = " + totalReunioesMes + "<hr>");
 
             var totalMembrosMes = parseInt(prompt("Digite o total de membros no mês."));
             document.write("Total de membros = " + totalMembrosMes + "<hr>");
+
             /*var totalMembrosMes = parseFloat((totalMembrosMes));*/
             var totalSetimaMes = parseFloat(prompt("Digite o valor total da sétima mensal."));
-            document.write("Total da sétima R$" + totalSetimaMes + "<hr>");
+            document.write("Total da sétima  = " + totalSetimaMes + "<hr>");
 
+            var totalVisitantesMes = parseInt(prompt("Digite o total de visitantes no mês."));
+            document.write("Total de visitantes no mês = " + totalVisitantesMes + "<hr>");
+
+            var totalIngressosMes = parseInt(prompt("Digite o total de ingressos."));
+            document.write("Total de ingressos = " + totalIngressosMes + "<hr>");
+
+            var saldoAnterior = parseInt(prompt("Digite o saldo anterior."));
+            document.write("Saldo anterior = " + saldoAnterior + "<hr>");
+
+            var mediaSetima = totalSetimaMes / totalReunioesMes;
+            document.write("<br>A média de sétima mensal é: R$" + mediaSetima + "<hr>");
+            console.log(mediaSetima);
+
+            var mediaSetimaMembro = (totalSetimaMes / totalMembrosMes);
+            document.write("Total de sétima por membros = " + mediaSetimaMembro + "<hr>");
+
+            document.write("Saldo atual é = " + (saldoAnterior + totalSetimaMes) + "<hr>");
 
             //var totalVisitantesMes;
             //var totalIngressosMes = parseInt(prompt("Digite o total de ingressos."));
@@ -78,18 +104,10 @@
             //var totalTrocaFichasMes;
 
 
-            var mediaSetima = totalSetimaMes / totalReunioesMes;
-            document.write("<br>A média de sétima por reunião é R$" + mediaSetima.toFixed(2) + "<hr>");
-            console.log(mediaSetima);
 
-
-            var mediaSetimaMembro = (totalSetimaMes / totalMembrosMes);
-            document.write("Total de média por membros é R$" + mediaSetimaMembro.toFixed(2) + "<hr>");
-
-            console.log(mediaSetimaMembro);
             /*var saldoAnterior = parseFloat(("Digite o saldo anterior."));
                 document.write(saldoAnterior);
-
+        
                 /*var saldoAtua;
                 //var vendaliteratura
                 var totalReceitas;
@@ -99,12 +117,12 @@
                 var dispesaServidores;
                 var compraLiteratura;
                 var despesas;
-
+                
                 var quantidade;
-
+        
                 //objetos
                 /*var tipoLiteraura = {
-
+        
                     nome: 'Texto Básico',
                     edicao: 'Sexta Edicao',
                     quantidade: 52,
@@ -114,7 +132,7 @@
                 //console.log();*/
 
             /*function calculaEstoque(QttextoBasico) {
-
+        
                     if (QttextoBasico > 1) {
                         emEstoque = true;
                         document.write("Texto básico em estoque")
@@ -122,30 +140,30 @@
                         emEstoque = false;
                         document.write("Texto básico em falta ");
                     }
-
+        
                 }*/
 
             /*var mediaMembrosReuniao = ((totalReunioesMes + totalMembrosMes) / 2);
                 var mediaMembrosReuniao = parseInt(mediaMembrosReuniao);
-
+        
                 document.write("O total de membros é: " + mediaMembrosReuniao + ".<br>")
-
+        
                 var mediaIngressosMes = ((totalReunioesMes + totalIngressosMes) / 2);
                 var mediaIngressosMes = parseInt(mediaIngressosMes);
-
+        
                 document.write("A média de ingressos: " + mediaIngressosMes + ".");
-
-
+        
+        
                 console.log(mediaMembrosReuniao, mediaIngressosMes);
-
-
+        
+        
                 //var QttextoBasico = prompt("Digite a quantidade");
                 //var QttextoBasico = parseInt(QttextoBasico);
-
+        
                 //calculaEstoque(QttextoBasico);
                 //console.log(calculaEstoque);
-
-
+        
+        
         */
         </script>
 
