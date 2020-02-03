@@ -45,6 +45,7 @@
             />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -53,11 +54,10 @@
 
             <div class="box1">
 
-                <img src="img/logo.png" width="80" height="80" alt="Logo
-                    Narcoticos Anonimos">
+                <img src="img/" width="80" height="80" alt="Logo">
                 <br>
                 <br>
-                <h3 class="text-left">Relatório mensal</h3><br>
+                <h3 class="text-left">Relatório mensal - V.0.1 teste</h3><br>
                 <details>Versão 01 Beta Teste.</details>
 
             </div>
@@ -76,126 +76,206 @@
         </div>
 
         <div class="container" style="border:1px solid #dfe4ea; padding:1rem;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                    <!--<form class="form-group" action="">
+                <label>Mês do Relatótio</label>
+                <select class="form-control">
+                    <option value="janeiro">Janeiro</option>
+                    <option value="fevereiro">Fevereiro</option>
+                    <option value="marco">Março</option>
+                    <option value="abril">Abril</option>
+                    <option value="maio">Maio</option>
+                    <option value="junho">Junho</option>
+                    <option value="julho">Julho</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="setembro">Setembro</option>
+                    <option value="outubro">Outubro</option>
+                    <option value="novembro">Novembro</option>
+                    <option value="dezembro">Dezembro</option>
+                </select>-->
+                    <!--<input type="text" id="mesRelatorio" placeholder="Ex:Janeiro,Fevereiro...">-->
+                    <!-- <br>
+                <label>Digite o total de reunioes no mês.</label>
+                <input type="text" id="totalReunioes">
+
+                <br>
+                <br>
+                <label>Digite o total de membros no mês.</label>
+                <input type="text" id="totalReunioes">
+                <br>
+                <br>
+                <label>Digite o valor total da sétima mensal.</label>
+                <input type="text" id="totalReunioes">
+                <br>
+                <br>
+                <label>Digite o total de visitantes no mês.</label>
+                <input type="text" id="totalReunioes">
+                <br>
+                <br>
+                <input type="submit" value="Registrar">
+            </form>
             <br>
+            </script> <script>-->
+                    <form>
+                        <div class="form-group row">
+                            <label for="mesDoRelatorio" class="col-4
+                                col-form-label">Mês
+                                do
+                                relatório</label>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                    </div>
+                                    <input id="mesDoRelatorio"
+                                        name="mesDoRelatorio"
+                                        placeholder="Digite o mês..."
+                                        type="text"
+                                        class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="TotalDeReunioes" class="col-4
+                                col-form-label">Total
+                                de reunioês no mês</label>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-calendar-check-o"></i>
+                                        </div>
+                                    </div>
+                                    <input id="TotalDeReunioes"
+                                        name="TotalDeReunioes"
+                                        placeholder="Digite o total de reuniões
+                                        no
+                                        mês..."
+                                        type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="MembrosNoMes" class="col-4
+                                col-form-label">Total
+                                de
+                                membros no mês</label>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-user-plus"></i>
+                                        </div>
+                                    </div>
+                                    <input id="MembrosNoMes" name="MembrosNoMes"
+                                        placeholder="Digite o total de membros
+                                        no
+                                        mês..."
+                                        type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="ToalSetimaDoMes" class="col-4
+                                col-form-label">Valor
+                                total da sétima mensal</label>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-calculator"></i>
+                                        </div>
+                                    </div>
+                                    <input id="ToalSetimaDoMes"
+                                        name="ToalSetimaDoMes"
+                                        placeholder="Digite o total da sétima no
+                                        mês..."
+                                        type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="totalDeVisitantes" class="col-4
+                                col-form-label">Total
+                                de visitantes no mês</label>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                    </div>
+                                    <input id="totalDeVisitantes"
+                                        name="totalDeVisitantes"
+                                        placeholder="Digite o total de
+                                        visitantes no
+                                        mês..."
+                                        type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="TotalDeIngressos" class="col-4
+                                col-form-label">Total
+                                de ingressos</label>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                    </div>
+                                    <input id="TotalDeIngressos"
+                                        name="TotalDeIngressos"
+                                        placeholder="Digite o total de ingressos
+                                        no
+                                        mês..."
+                                        type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="saldoAnterior" class="col-4
+                                col-form-label">Saldo
+                                anterior</label>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-calculator"></i>
+                                        </div>
+                                    </div>
+                                    <input id="saldoAnterior"
+                                        name="saldoAnterior"
+                                        placeholder="Digite o saldo anterior..."
+                                        type="text"
+                                        class="form-control">
+                                </div>
+                            </div>
 
-                    <input type="text" id="nome">
-                    <input type="email" id="email">
-                    <input type="submit" value="Registrar">
+                        </div>
+                        <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Imprimir</button>
+    </div>
+                    </div>
+                </div>
+
+            </form>
 
 
-
-
-            <br>
-
-            <script>
-            var relatorioMes = (prompt("Digite o mês do relatório."));
-            document.write("Relatório referente ao mês: " + relatorioMes + "<hr>");
-
-            var totalReunioesMes = parseInt(prompt("Digite o total de reunioes no mês."));
-            document.write("Total de reuniões = " + totalReunioesMes + "<hr>");
-
-            var totalMembrosMes = parseInt(prompt("Digite o total de membros no mês."));
-            document.write("Total de membros = " + totalMembrosMes + "<hr>");
-
-            /*var totalMembrosMes = parseFloat((totalMembrosMes));*/
-            var totalSetimaMes = parseFloat(prompt("Digite o valor total da sétima mensal."));
-            document.write("Total da sétima  = " + totalSetimaMes + "<hr>");
-
-            var totalVisitantesMes = parseInt(prompt("Digite o total de visitantes no mês."));
-            document.write("Total de visitantes no mês = " + totalVisitantesMes + "<hr>");
-
-            var totalIngressosMes = parseInt(prompt("Digite o total de ingressos."));
-            document.write("Total de ingressos = " + totalIngressosMes + "<hr>");
-
-            var saldoAnterior = parseInt(prompt("Digite o saldo anterior."));
-            document.write("Saldo anterior = " + saldoAnterior + "<hr>");
-
-            var mediaSetima = totalSetimaMes / totalReunioesMes;
-            document.write("<br>A média de sétima mensal é: R$" + mediaSetima + "<hr>");
-            console.log(mediaSetima);
-
-            var mediaSetimaMembro = (totalSetimaMes / totalMembrosMes);
-            document.write("Total de sétima por membros = " + mediaSetimaMembro + "<hr>");
-
-            document.write("Saldo atual é = " + (saldoAnterior + totalSetimaMes) + "<hr>");
-
-            //var totalVisitantesMes;
-            //var totalIngressosMes = parseInt(prompt("Digite o total de ingressos."));
-            //var totalIngressosMes = parseInt(prompt(totalIngressosMes));
-
-
-            //var totalTrocaFichasMes;
-
-
-
-            /*var saldoAnterior = parseFloat(("Digite o saldo anterior."));
-                document.write(saldoAnterior);
-
-                /*var saldoAtua;
-                //var vendaliteratura
-                var totalReceitas;
-                var totalRepasse;
-                var aluguelGrupo;
-                var manutencaoSala;
-                var dispesaServidores;
-                var compraLiteratura;
-                var despesas;
-
-                var quantidade;
-
-                //objetos
-                /*var tipoLiteraura = {
-
-                    nome: 'Texto Básico',
-                    edicao: 'Sexta Edicao',
-                    quantidade: 52,
-                    valor: 12.50,
-                    emEstoque: true
-                };
-                //console.log();*/
-
-            /*function calculaEstoque(QttextoBasico) {
-
-                    if (QttextoBasico > 1) {
-                        emEstoque = true;
-                        document.write("Texto básico em estoque")
-                    } else {
-                        emEstoque = false;
-                        document.write("Texto básico em falta ");
-                    }
-
-                }*/
-
-            /*var mediaMembrosReuniao = ((totalReunioesMes + totalMembrosMes) / 2);
-                var mediaMembrosReuniao = parseInt(mediaMembrosReuniao);
-
-                document.write("O total de membros é: " + mediaMembrosReuniao + ".<br>")
-
-                var mediaIngressosMes = ((totalReunioesMes + totalIngressosMes) / 2);
-                var mediaIngressosMes = parseInt(mediaIngressosMes);
-
-                document.write("A média de ingressos: " + mediaIngressosMes + ".");
-
-
-                console.log(mediaMembrosReuniao, mediaIngressosMes);
-
-
-                //var QttextoBasico = prompt("Digite a quantidade");
-                //var QttextoBasico = parseInt(QttextoBasico);
-
-                //calculaEstoque(QttextoBasico);
-                //console.log(calculaEstoque);
-
-
-        */
-        </script>
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
         </div>
 
 
 
-        <!--[if lt IE 7]>
-                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
+
     </body>
 
 </html>
