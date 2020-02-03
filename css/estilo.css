@@ -37,6 +37,14 @@
     width: 15%!important;
 }
 
+label{
+
+    font-size: 14px!important;
+    font-weight: bold;
+    color:#747d8c!important;
+
+}
+
 /*media queries*/
 
 @media (min-width: 360px) and (max-width: 740px) {
