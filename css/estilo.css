@@ -1,3 +1,18 @@
+/*https://ocariocawebdesign.com/
+   Autor: Carlos Abreu - O Carioca Web design
+   01/2020
+
+*/
+
+
+body{
+
+background:#EEEEEE;
+margin:0;
+padding:0;
+
+}
+
 .header-social {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -42,6 +57,14 @@ label{
     font-size: 14px!important;
     font-weight: bold;
     color:#747d8c!important;
+
+}
+
+#conteudoForm{
+
+  padding:10%;
+  margin:auto;
+  border:1px solid #333;
 
 }
 
