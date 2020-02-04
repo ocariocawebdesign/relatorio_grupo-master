@@ -1,6 +1,3 @@
-
-
-
 var relatorioMes = (prompt("Digite o mês do relatório."));
 document.write("Relatório referente ao mês: " + relatorioMes + "<hr>");
 
@@ -32,12 +29,12 @@ document.write("Total de sétima por membros = " + mediaSetimaMembro + "<hr>");
 
 document.write("Saldo atual é = " + (saldoAnterior + totalSetimaMes) + "<hr>");
 
-            //var totalVisitantesMes;
-            //var totalIngressosMes = parseInt(prompt("Digite o total de ingressos."));
-            //var totalIngressosMes = parseInt(prompt(totalIngressosMes));
+//var totalVisitantesMes;
+//var totalIngressosMes = parseInt(prompt("Digite o total de ingressos."));
+//var totalIngressosMes = parseInt(prompt(totalIngressosMes));
 
 
-            //var totalTrocaFichasMes;
+//var totalTrocaFichasMes;
 
 
 
