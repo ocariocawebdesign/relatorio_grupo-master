@@ -22,7 +22,7 @@
             "Total de ingressos = " + totalIngressosMes + "<br>" +
             "Saldo anterior R$" + saldoAnterior.toFixed(2) + "<br>" +
             "Saldo atual é R$" + (saldoAnterior + totalSetimaMes) + "<br>" +
-            "<br>A média de sétima mensal é: R$" + mediaSetima.toFixed(2) + "<br>" +
+            "<br>A média de sétima mensal por reuniões é R$" + mediaSetima.toFixed(2) + "<br>" +
             "Média de sétima por membros é R$" + mediaSetimaMembro.toFixed(2) + "<br>"
 
         )
