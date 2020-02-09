@@ -67,7 +67,6 @@
 
             <h2 class="text-left">Relatório Grupos Unificados</h2>
 
-
         </div>
 
         <div class="box3">
@@ -83,6 +82,21 @@
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
                 <form action="" method="">
+
+                    <div class="form-group row">
+                        <label for="nomeDoGrupo" class="col-4 col-form-label">Digite o Grupo</label>
+                        <br>
+                        <div class="col-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                                <input id="nomeDoGrupo" name="" placeholder="Nome do grupo" type="text" required="" class="form-control">
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-group row">
                         <label for="mesDoRelatorio" class="col-4 col-form-label">Mês do relatório</label>
                         <br>
@@ -93,10 +107,85 @@
                                         <i class="fa fa-calendar"></i>
                                     </div>
                                 </div>
-                                <input id="mesDoRelatorio" name="mesDoRelatorio" placeholder="Digite o mês..." type="text" class="form-control">
+                                <input id="mesDoRelatorio" name="" placeholder="Digite o mês..." type="text" required="" class="form-control">
                             </div>
                         </div>
                     </div>
+
+                    <div class="form-group row">
+                        <label for="anoDoRelatorio" class="col-4 col-form-label">Ano do relatório</label>
+                        <br>
+                        <div class="col-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                                <input id="anoDoRelatorio" name="" placeholder="Digite o ano..." type="text" required="" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Servidores</h3>
+                    <div class="form-group row">
+                        <label for="secretarioDoGrupo" class="col-4 col-form-label">Secretário(a):</label>
+                        <br>
+                        <div class="col-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                                <input id="secretarioDoGrupo" name="" placeholder="Digite o nome" required="" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="tesoureiroDoGrupo" class="col-4 col-form-label">Tesoureiro(a):</label>
+                        <br>
+                        <div class="col-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                                <input id="tesoureiroDoGrupo" name="" placeholder="Digite o nome" type="text" required="" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="RsgDoGrupo" class="col-4 col-form-label">RSG:</label>
+                        <br>
+                        <div class="col-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                                <input id="rsgDoGrupo" name="" placeholder="Digite o nome" type="text" required="" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="rsgSuplenteDoGrupo" class="col-4 col-form-label">RSG Suplente:</label>
+                        <br>
+                        <div class="col-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                                <input id="rsgSuplenteDoGrupo" name="" placeholder="Digite o nome" type="text" required="" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="form-group row">
                         <label for="reunioesMes" class="col-4 col-form-label">Total de reuniões</label>
                         <br>
@@ -107,7 +196,7 @@
                                         <i class="fa fa-calendar"></i>
                                     </div>
                                 </div>
-                                <input id="reunioesMes" placeholder="Digite o total de reuniões..." type="number" class="form-control">
+                                <input id="reunioesMes" placeholder="Digite o total de reuniões..." type="number" required="" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -120,7 +209,7 @@
                                         <i class="fa fa-user-plus"></i>
                                     </div>
                                 </div>
-                                <input id="membrosNoMes" placeholder="Digite o total de membros nomês..." type="number" class="form-control">
+                                <input id="membrosNoMes" placeholder="Digite o total de membros nomês..." type="number" required="" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -133,7 +222,7 @@
                                         <i class="fa fa-calculator"></i>
                                     </div>
                                 </div>
-                                <input id="totalSetimaDoMes" placeholder="Digite o total da sétima no mês..." type="text" class="form-control">
+                                <input id="totalSetimaDoMes" placeholder="Digite o total da sétima no mês..." type="text" required="" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -147,7 +236,7 @@
                                         <i class="fa fa-users"></i>
                                     </div>
                                 </div>
-                                <input id="totalDeVisitantes" placeholder="Digite o total de visitantes no mês..." type="number" class="form-control">
+                                <input id="totalDeVisitantes" placeholder="Digite o total de visitantes no mês..." type="number" required="" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -160,7 +249,7 @@
                                         <i class="fa fa-users"></i>
                                     </div>
                                 </div>
-                                <input id="totalDeIngressos" placeholder="Digite o total de ingressos no mês..." type="number" class="form-control">
+                                <input id="totalDeIngressos" placeholder="Digite o total de ingressos no mês..." type="number" required="" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -173,7 +262,7 @@
                                         <i class="fa fa-calculator"></i>
                                     </div>
                                 </div>
-                                <input id="saldoAnterior" placeholder="Digite o saldo anterior..." type="text" class="form-control">
+                                <input id="saldoAnterior" placeholder="Digite o saldo anterior..." type="text" required="" class="form-control">
                             </div>
                         </div>
 
@@ -186,6 +275,29 @@
             </div>
 
             </form>
+
+            <div class="container">
+
+
+                <script>
+                    //Difinido objeto literaturas
+                    var literaturas = ["texto Básico", "isto Resulta", "triangulo Da AutoAceitação", "só Por Hoje"];
+
+                    var literatura = {
+
+                        nome: literaturas[0],
+
+
+                    }
+
+                    console.log(literaturas[0]);
+                    console.log(literaturas[1]);
+                    console.log(literaturas[2]);
+                    console.log(literaturas[3]);
+                    console.log(literaturas[4]);
+                </script>
+
+            </div>
 
 
             <!--[if lt IE 7]>
