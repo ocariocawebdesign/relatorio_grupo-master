@@ -45,6 +45,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -55,7 +60,7 @@
 
         <div class="box1">
 
-            <img src="img/" width="80" height="80" alt="Logo">
+            <img src="img/logo.png" width="80" height="80" alt="Logo">
             <br>
             <br>
             <h3 class="text-left">Relatório mensal - V.0.2 teste</h3><br>
@@ -77,11 +82,47 @@
 
     <script src="js/relatorio2.js"></script>
 
+    <script>
+        gerarRelatorio = function() {
+            var pdf = new jsPDF('p', 'pt', 'letter');
+
+            source = $('#formRelatorio')[0];
+            //source = $('criarRelatorio()')
+            source = $('#nomeDoGrupo')[1];
+            source = $('mesDoRelatorio')[2];
+
+            specialElementHandlers = {
+                '#bypassme': function(element, renderer) {
+
+                    return true
+                }
+            };
+            margins = {
+                top: 80,
+                bottom: 60,
+                left: 10,
+                width: 700
+            };
+
+            pdf.fromHTML(
+                source, // HTML string or DOM elem ref.
+                margins.left, // x coord
+                margins.top, { // y coord
+                    'width': margins.width, // max width of content on PDF
+                    'elementHandlers': specialElementHandlers
+                },
+
+                function(dispose) {
+                    pdf.save('rel.pdf');
+                }, margins);
+        }
+    </script>
+
     <div class="container" id="conteudoForm" style="border:1px solid #dfe4ea; padding:1rem;">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-                <form action="" method="">
+                <form id="formRelatorio" action="" method="POST">
 
                     <div class="form-group row">
                         <label for="nomeDoGrupo" class="col-4 col-form-label">Digite o Grupo</label>
@@ -209,7 +250,7 @@
                                         <i class="fa fa-user-plus"></i>
                                     </div>
                                 </div>
-                                <input id="membrosNoMes" placeholder="Digite o total de membros nomês..." type="number" required="" class="form-control">
+                                <input id="membrosNoMes" placeholder="Digite o total de membros no mês" type="number" required="" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -269,7 +310,14 @@
                     </div>
                     <div class="form-group row">
                         <div class="offset-4 col-8">
-                            <input type="button" onclick="criarRelatorio()" value="Imprimir">
+
+                            <button type="button" onclick="criarRelatorio()"> Imprimir</button>
+
+                            <br>
+                            <br>
+
+                            <!--<button onclick="gerarRelatorio();">PDF</button>-->
+
                         </div>
                     </div>
             </div>
@@ -280,8 +328,12 @@
 
 
                 <script>
+                    // var criarRelatorio = new jsPDF()
+
+                    //doc.text(20, 20, 'Hello world!')
+
                     //Difinido objeto literaturas
-                    var literaturas = ["texto Básico", "isto Resulta", "triangulo Da AutoAceitação", "só Por Hoje"];
+                    /*var literaturas = ["texto Básico", "isto Resulta", "triangulo Da AutoAceitação", "só Por Hoje"];
 
                     var literatura = {
 
@@ -295,7 +347,11 @@
                     console.log(literaturas[2]);
                     console.log(literaturas[3]);
                     console.log(literaturas[4]);
+                    */
                 </script>
+
+
+
 
             </div>
 
