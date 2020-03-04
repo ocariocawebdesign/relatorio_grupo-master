@@ -1,3 +1,11 @@
+// <link type="text/css" rel="stylesheet" href="demo.css">
+var link = document.createElement('link');
+link.type = 'text/css';
+link.rel = 'stylesheet';
+link.href = 'css/bootstrap.min';
+document.head.appendChild(link);
+
+
 function criarRelatorio() {
 
 
